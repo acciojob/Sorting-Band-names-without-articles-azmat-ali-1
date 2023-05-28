@@ -5,7 +5,9 @@
       // Remove articles from band names and sort them
       let sortedBandNames = bandNames
         .map((name) => name.replace(/^(a|an|the)\s+/i, ""))
-        .sort();
+        .sort((a,b){
+			a-b;
+		});
 
       // Print sorted band names in an unordered list
       let bandList = document.getElementById("band");
